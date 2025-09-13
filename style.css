@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #e5ebe9;
+  font-size: 10px;
+  font-family: Inter;
+}
+
+.container,
+.head,
+.information,
+.contacts {
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+
+.information__head,
+.information__head > b,
+.contacts__mail,
+div > a {
+  font-size: 1.6rem;
+}
+
+.head {
+  padding-top: 20px;
+}
+
+.head__photo,
+.main__head,
+.main,
+.main__education {
+  display: block;
+}
+
+.information2__work {
+  margin: 20px 0 0 0;
+}
+
+li.work {
+  margin-top: 30px;
+}
+.main {
+  padding-bottom: 20px;
+  border-top: solid 1px #920606;
+}
+
+.head__photo {
+  width: 75%;
+  object-fit: contain;
+}
+
+.main__head {
+  order: 1;
+  padding-left: 80px;
+  margin: 20px 0 10px 0;
+  width: 100%;
+  border-top: solid 1px #920606;
+}
+
+.information__personal {
+  display: flex;
+  width: 90%;
+}
+
+.information__add {
+  margin-top: 45px;
+}
+
+.head__profession,
+.main__education,
+.skills {
+  margin-top: 20px;
+}
+
+.information__head {
+  margin-right: 20px;
+}
+
+.main {
+  padding: 20px 0 0 80px;
+}
+
+p,
+.list,
+li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 20px;
+}
+
+.list,
+.list__item,
+.contacts__img,
+ul {
+  margin-top: 10px;
+}
+
+.contacts {
+  flex-direction: column;
+}
+
+.head__img {
+  margin: 20px 0 0 30px;
+}
+
+@media (min-width: 1025px) {
+  .head__img {
+    display: block;
+  }
+}
+
+.contacts {
+  padding-left: 50px;
+}
+
+.contacts__img {
+  height: 24px;
+}
+
+h1,
+h2 {
+  color: #920606;
+}
+
+.project_link {
+  display: inline-block;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.project_link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 2s;
+}
+
+.project_img {
+  width: 100%;
+  object-fit: cover;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+li:first-child {
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .information__personal {
+    display: none;
+  }
+  .information {
+    width: 100%;
+  }
+}
